@@ -1,0 +1,58 @@
+
+#learn{
+    padding: 10vw 8vw 4vw 8vw;
+    font-style: normal;
+
+}
+#learn h1{
+    text-align: center;
+    width: 100%;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 2rem;
+}
+#learn p{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+}
+.impact, .donation{
+    padding:0vw 8vw 4vw 8vw;
+}
+.impact img{
+    max-width: 100%;
+}
+.impact h3{
+    font-size: 34px;
+}
+#facts{
+    padding: 0vw 8vw 8vw 8vw;
+}
+
+.donation h2{
+    border-radius: 25px;
+    background-color: var(--PRIMARY-COLOR);
+    padding: 24px;
+    text-align: center;
+    color: white;
+    font-size: 2rem;
+
+}
+
+.donation div h3, #facts h2{
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin: 20px 0;
+}
+.donation div ul li, #facts ul li{
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.5px;
+    line-height: 1.5em;
+    margin-top: 12px;
+}

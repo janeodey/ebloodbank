@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EBloodBank</title>
+    <link rel="stylesheet" href="./style.css">
+     <link rel="icon" type="image/x-icon" href="./favicon_io/apple-touch-icon.png">
+</head>
+<body>
+    <!-- navigation -->
+    <nav>
+        <a href="./index.html"><img src="./assets/Logo.svg" alt="ebloodbank logo" class="logo"></a>
+        <div class="navigation">
+            <ul id="menu">
+                <i class="fas fa-times" id="menu-close" onclick="toggleMenu()"></i>
+                <li><a href="./components/about.html" class="active">About</a></li>
+                <li><a href="./components/resources.html">Resources</a></li>
+                <li><a href="./components/learn.html">Learn</a></li>
+                <li><a href="./components/newsandevent.html">News&Events</a></li>
+                <li><a href="./components/supportus.html">Support us</a></li>
+                <li class="donateBtn"><a href="./components/donate.html">Donate</a></li>
+                <li class="signupBtn dropdown"><a href="./login.html">Sign in</a>
+                    <div class="dropitems">
+                        <a href="./login.html">Donor</a>
+                        <a href="#">Medical <br>Institution</a>
+                    </div>
+                </li>
+
+            </ul>
+            <i class="fas fa-bars" id="menu-btn" onclick="toggleMenu()"></i>
+        </div>
+    </nav>
+    
+    <!-- home -->
+    <section id="home">
+
+
+        <h2>Donate <span class="blood">Blood</span> <br> Save a Life</h2>
+        <p>The demand for blood is increasing in our society today,  <br>
+            patients, mostly accident victims lose their lives because <br>
+            of the lack of blood. eBloodbank secures a channel to help <br>
+            save lives.</p>
+            <a href="#" class="donateBtn">Donate Now</a>
+        
+    </section>
+
+    <!-- footer -->
+    <footer>
+        <div class="footer-column">
+            <h3>About</h3>
+            <li>Purpose & Network</li>
+            <li>What we offer</li>
+        </div>
+        <div class="footer-column">
+            <h3>News & Events</h3>
+            <li>News</li>
+            <li>Blogs</li>
+        </div>
+        <div class="footer-column">
+            <h3>Resources</h3>
+            <li>Donor</li>
+            <li>Health History Questionaire</li>
+        </div>
+        <div class="footer-column">
+            <h3>CONTACT US</h3>
+            <p><b>Call:</b> 0801 0440 456 </p>
+            <div class="pro-link">
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-linkedin"></i>
+            </div>
+            <div class="stores">
+                <img src="./assets/AppStore.svg" alt="App store logo">
+                <img src="./assets/GooglePlay.svg" alt="Playstore logo">
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright&nbsp; <script>document.write(new Date().getFullYear())</script> All rights reserved | University of Calabar EBloodBank</p>
+        </div>
+    </footer>
+
+
+    <script src="https://kit.fontawesome.com/09432581c7.js" crossorigin="anonymous"></script>
+    <script>
+        let toggleStatus = 0;
+        function toggleMenu(){
+            if(toggleStatus == 1){
+                document.getElementById("menu").style.right = "-220px";
+                toggleStatus=0
+            } else if(toggleStatus == 0){
+                document.getElementById("menu").style.right = "0px";
+                toggleStatus=1
+            }
+        }
+
+    </script>
+</body>
+</html>

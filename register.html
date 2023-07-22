@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" type="image/x-icon" href="./favicon_io//favicon-16x16.png">
+    <title>ebloodbank | Register</title>
+
+    <style>
+        body{
+            background-image: linear-gradient(rgba(9,5,54,0.3), rgba(5,4,46,0.7)), url(./assets/Background.png);
+            width: 100%;
+            height: 100vh;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+        .loginlogo{
+            padding: 2vw 10vw 6vw 10vw;
+        }
+    </style>
+</head>
+<body>
+    <div class="loginlogo">
+        <a href="#"><img src="./assets/Logo.svg" alt="ebloodbank logo" class="logo"></a>
+    </div>
+    <!-- registeration -->
+    <section id="registeration">
+        <div class="content">
+            <h1>Donate <span class="blood">Blood</span> <br> save a Life</h1>
+            <p>The demand for blood is increasing in our society today, <br>
+                patients, mostly accident victims lose their lives because of <br>
+                the lack of blood. eBloodbank secures a channel to help <br>
+                save lives.</p>
+        </div>
+        <div class="form-box login">
+            <h2>Create your profile</h2>
+            <form action="#">
+                <div class="input-box">
+                    <input type="text" id="username" required>
+                    <label for="username">Username</label>
+                    <i class='bx bx-user-circle'></i>
+                </div>
+                <div class="input-box">
+                    <input type="password" required id="password">
+                    <label for="password">password (6 to 20 characters)</label>
+                </div>
+                <div class="input-box">
+                    <input type="password" required id="password">
+                    <label for="password">confirm password</label>
+                </div>
+                <button type="submit" class="btn"><a href="./components/home.html" style="color: #fff;">Continue</a></button>
+                <div class="logreg-link">
+                    <p>Already have an account? <a href="./login.html" class="register-link">Sign in</a></p>
+                </div>
+            </form>
+        </div>
+    </section>
+</body>
+</html>

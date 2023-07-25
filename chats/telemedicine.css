@@ -1,5 +1,9 @@
-
-
+a:active{
+  color: red;
+}
+a:focus{
+  color: red;
+}
 .button {
   border: none;
   padding: 0.625em;
@@ -34,7 +38,7 @@
 }
 
 .active-person {
-  background: red;
+  /* background: red; */
   box-shadow: 0 0 0.5em 0.1em #c3c3c333;
 }
 

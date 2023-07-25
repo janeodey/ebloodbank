@@ -16,6 +16,9 @@
  body{
     font-family: "Ubuntu", sans-serif;
  }
+ a:active, a:focus{
+   color: red;
+ }
 
  /* global tags */
  h1{

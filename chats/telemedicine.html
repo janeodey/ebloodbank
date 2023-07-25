@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ebloodbank | telemedicine</title>
+    <link rel="stylesheet" href="telemedicine.css" />
+    <link rel="stylesheet" href="../style.css">
+  
+  </head>
+  <body>
+    <nav>
+      <a href="../index.html"><img src="../assets/Logo.svg" alt="ebloodbank logo" class="logo"></a>
+      <div class="navigation">
+          <ul id="menu">
+              <i class="fas fa-times" id="menu-close" onclick="toggleMenu()"></i>
+              <li><a href="./components/about.html" class="active">About</a></li>
+              <li><a href="./components/resources.html">Resources</a></li>
+              <li><a href="./components/learn.html">Learn</a></li>
+              <li><a href="./components/newsandevent.html">News&Events</a></li>
+              <li><a href="./components/supportus.html">Support us</a></li>
+              <li class="donateBtn"><a href="./components/donate.html">Donate</a></li>
+              <li class="signupBtn dropdown"><a href="./login.html">Sign in</a>
+                  <div class="dropitems">
+                      <a href="./login.html">Donor</a>
+                      <a href="#">Medical <br>Institution</a>
+                  </div>
+              </li>
+
+          </ul>
+          <i class="fas fa-bars" id="menu-btn" onclick="toggleMenu()"></i>
+      </div>
+  </nav>
+    
+
+  <div class="body-tele">
+        <div class="person-selector">
+          <button class="button person-selector-button active-person" id="ebloodbank-selector">EBloodBank</button>
+          <button class="button person-selector-button" id="me-selector" style="display: block;">Me</button>
+        </div>
+
+        <div class="chat-container">
+          <h2 class="chat-header">Ebloodbank chatting</h2>
+    
+          <div class="chat-messages">
+            <div class="message blue-bg">
+              <div class="message-sender">Ebloodbank</div>
+              <div class="message-text">Hello Victoria, how can i help you today?</div>
+              <div class="message-timestamp">9:09 AM</div>
+            </div>
+            <div class="message gray-bg">
+              <div class="message-sender">Me</div>
+              <div class="message-text">I would love to donate blood to any hospital within my location?</div>
+              <div class="message-timestamp">09:23 AM</div>
+            </div>
+          </div>
+
+          <form class="chat-input-form">
+            <input type="text" class="chat-input" required placeholder="Type here..." />
+            <button type="submit" class="button send-button">Send</button>
+          </form>
+          <button class="button clear-chat-button">Clear Chat</button>
+    </div>
+    <div class="tracker">
+      <div class="left">
+        <h1>Period Tracker</h1>
+        <p>The eBloodBank project is a transformative initiative aimed at addressing the critical problem of blood unavailability for transfusions in Cross River State, Nigeria. This project seeks to revolutionize the way blood donations and transfusions are coordinated, providing a streamlined platform that connects registered hospitals with available blood donors in real-time.</p>
+      </div>
+      <div class="right">
+        <img src="../assets/lady.svg" alt="period tracker">
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+    <script src="https://kit.fontawesome.com/09432581c7.js" crossorigin="anonymous"></script>
+    <script>
+        let toggleStatus = 0;
+        function toggleMenu(){
+            if(toggleStatus == 1){
+                document.getElementById("menu").style.right = "-220px";
+                toggleStatus=0
+            } else if(toggleStatus == 0){
+                document.getElementById("menu").style.right = "0px";
+                toggleStatus=1
+            }
+        }
+
+    </script>
+  </body>
+</html>

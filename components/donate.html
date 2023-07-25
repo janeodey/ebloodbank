@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EBloodBank | donate</title>
+    <link rel="stylesheet" href="../style.css">
+     <link rel="icon" type="image/x-icon" href="../favicon_io/apple-touch-icon.png">
+     <link rel="stylesheet" href="./donate.css">
+</head>
+<body>
+
+    <!-- navigation -->
+    <nav>
+        <a href="../index.html"><img src="../assets/Logo.svg" alt="ebloodbank logo" class="logo"></a>
+        <div class="navigation">
+            <ul id="menu">
+                <i class="fas fa-times" id="menu-close" onclick="toggleMenu()"></i>
+                <li><a href="./components/about.html" class="active">About</a></li>
+                <li><a href="../chats/telemedicine.html">Resources</a></li>
+                <li><a href="../components/learn.html">Learn</a></li>
+                <li><a href="./components/newsandevent.html">News&Events</a></li>
+                <li><a href="./components/supportus.html">Support us</a></li>
+                <li class="donateBtn"><a href="./donate.html">Donate</a></li>
+                <li class="users"><a href="./login.html"><i class="fas fa-user"></i></a>
+                </li>
+
+            </ul>
+            <i class="fas fa-bars" id="menu-btn" onclick="toggleMenu()"></i>
+        </div>
+    </nav>
+
+        <div id="homes">
+            <h1>complete your profile</h1>
+            <form action="" id="donation-form">
+                1. Full Name
+                <div class="donate-input">
+                    <div class="">
+                        <input type="text" id="username" required placeholder="First name">
+                        
+                    </div>
+                    <div class="">
+                        <input type="text" id="username" required placeholder="Last Name">
+                       
+                    </div>
+                </div>
+                2. Email address
+                <div class="donate-input">
+                        <input type="text" id="username" required placeholder="email">
+                </div>
+
+                3. Phone number
+                <div class="donate-input">
+                    <input type="number" id="num" required placeholder="+234">
+                </div>
+
+                <div class="donate-input">
+                    4. What is your address?
+                        <input type="text" id="address" placeholder="Input address here" required>
+                </div>
+
+                5. What is your blood type
+                <div class="donate-input">
+                    
+                        <select name="" id="">
+                            <option value="">please select</option>
+                            <option value="o">O</option>
+                            <option value="">A</option>
+                            <option value="">AB</option>
+                            <option value="">B</option>
+                        </select>
+                </div>
+
+                6. Occupation
+                <div class="donate-input">
+                   
+                        <input type="text" id="username" required>
+                        <label for="username"><Table></Table></label>
+                </div>
+                7. Have you donated blood before?
+                <div class="donate-input">
+                        <input type="radio" id="yes" name="blood">
+                        <label for="yes">Yes, I have</label> <br>
+                        <input type="radio" id="no" name="blood">
+                        <label for="no">No, I have not</label>
+                </div> <br>
+                8. Have you donated blood beforeHave you had any disease?
+                <div class="donate-input">
+                        <input type="radio" id="yes1" name="blood">
+                        <label for="yes1">Yes, I have</label> <br>
+                        <input type="radio" id="no1" name="blood">
+                        <label for="no1">No, I have not</label>
+                </div><br>
+                9. Have you had any disease?
+                <div class="donate-input">
+                        <input type="radio" id="yes2" name="blood">
+                        <label for="yes2">Yes, I have</label> <br>
+                        <input type="radio" id="no2" name="blood">
+                        <label for="no2">No, I have not</label>
+                </div> <br>
+                <div>
+                    <input type="radio" id="agree">
+                    <label for="agree">I agree to terms and conditions</label>
+                </div>
+
+            </form>
+        </div>
+
+
+      
+        
+    </section>
+
+    <!-- footer -->
+    <footer>
+        <div class="footer-column">
+            <h3>About</h3>
+            <li>Purpose & Network</li>
+            <li>What we offer</li>
+        </div>
+        <div class="footer-column">
+            <h3>News & Events</h3>
+            <li>News</li>
+            <li>Blogs</li>
+        </div>
+        <div class="footer-column">
+            <h3>Resources</h3>
+            <li>Donor</li>
+            <li>Health History Questionaire</li>
+        </div>
+        <div class="footer-column">
+            <h3>CONTACT US</h3>
+            <p><b>Call:</b> 0801 0440 456 </p>
+            <div class="pro-link">
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-linkedin"></i>
+            </div>
+            <div class="stores">
+                <img src="../assets/AppStore.svg" alt="App store logo">
+                <img src="../assets/GooglePlay.svg" alt="Playstore logo">
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright&nbsp; <script>document.write(new Date().getFullYear())</script> All rights reserved | University of Calabar EBloodBank</p>
+        </div>
+    </footer>
+
+
+    <script src="https://kit.fontawesome.com/09432581c7.js" crossorigin="anonymous"></script>
+    <script>
+        let toggleStatus = 0;
+        function toggleMenu(){
+            if(toggleStatus == 1){
+                document.getElementById("menu").style.right = "-220px";
+                toggleStatus=0
+            } else if(toggleStatus == 0){
+                document.getElementById("menu").style.right = "0px";
+                toggleStatus=1
+            }
+        }
+
+    </script>
+</body>
+</html>

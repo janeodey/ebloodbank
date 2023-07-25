@@ -53,6 +53,7 @@
     align-items: center;
     z-index: 999;
     height: 96px;
+    top: 0;
  }
  
  nav .navigation{
